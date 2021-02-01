@@ -1,0 +1,23 @@
+<body>
+<div class="card-circuit">
+    <div class="thumbnail"><img class="left" src="assets/img/circuitos/{{circuito.imagen_circuito}}" /></div>
+    <div class="right">
+        <h1 p-2> {{circuito.nombre_gp}} </h1>
+        <div class="separator"></div>
+        <div>
+            <!--It contributes to the development of bones and most importantly it is responsible for synthesis of your DNA and RNA...-->
+            <p>Pais Localizacion:  {{circuito.pais_localizacion}}  </p>
+            <p>Record Vuelta rapida:  {{circuito.record_vuelta_rapida}}  </p>
+            <p>Ultimo Ganador:  {{circuito.ganador_ultimo_gp}}  </p>
+            <p>Longitud:  {{circuito.longitud_circuito}}  </p>
+            <p>Ganador 2020: {{circuito.ganador_actual}} </p>
+        </div>
+    </div>
+    <h6>Dia de la carrera: {{circuito.dia_de_la_carrera}}</h6>
+
+    <div class="fab" style="background: url(assets/img/circuitos/{{circuito.carrera_disputada}}) center/cover no-repeat;">
+        <i class="fa fa-arrow-down fa-3x"></i>
+    </div>
+</div>
+
+</body>

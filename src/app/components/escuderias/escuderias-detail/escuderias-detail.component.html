@@ -1,0 +1,76 @@
+<!-- Mapa amb la localitzacio del circuit -->
+<body>
+    
+
+<iframe class="mapaLocalizacionEscuderia" width="1000" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" 
+    src="https://maps.google.com/maps?width=1000&amp;height=200&amp;hl=en&amp;q=%20()&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"> 
+</iframe>
+
+
+<!-- Cartes dels pilotos de x escuderia -->
+<div class="row cartasPilotosCentrado">
+
+    <div class="example-2 card2">
+        <div class="wrapper"
+            style="background: url(./imagenes/imagenes-pilotos/atributs_piloto_principal.imagen_piloto) center/cover no-repeat;">
+            <div class="header">
+                <div class="date">
+                    <span class="day">Debut `+ atributs_piloto_principal.debut + `</span>
+                </div>
+                <br>
+                <div class="date">
+                    <span class="day">Titulos Mundiales `+ atributs_piloto_principal.titulos_mundiales + `</span>
+                </div>
+            </div>
+            <div class="data">
+                <div class="content">
+                    <span class="author">`+ atributs_piloto_principal.escuderia_actual + `</span>
+                    <h1 class="title"><a href="#">`+ atributs_piloto_principal.nombre + `</a></h1>
+                    <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the
+                        Survive soundtrack, out today.</p>
+                    <a href="#" class="button"> <img src="./imagenes/w80/`+ atributs_piloto_principal.bandera + `.png"
+                            height="20px" width="30px"> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="example-2 card2">
+        <div class="wrapper"
+            style="background: url(./imagenes/imagenes-pilotos/atributs_piloto_secundari.imagen_piloto) center/cover no-repeat;">
+            <div class="header">
+                <div class="date">
+                    <span class="day">Debut `+ atributs_piloto_secundari.debut + `</span>
+                </div>
+                <br>
+                <div class="date">
+                    <span class="day">Titulos Mundiales `+ atributs_piloto_secundari.titulos_mundiales + `</span>
+                </div>
+            </div>
+            <div class="data">
+                <div class="content">
+                    <span class="author">`+ atributs_piloto_secundari.escuderia_actual + `</span>
+                    <h1 class="title"><a href="#">`+ atributs_piloto_secundari.nombre + `</a></h1>
+                    <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the
+                        Survive soundtrack, out today.</p>
+                    <a href="#" class="button"> <img src="./imagenes/w80/`+ atributs_piloto_secundari.bandera + `.png"
+                            height="20px" width="30px"> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Informacion Escuderia -->
+<div class="informacionEscuderiaCentrado alert alert-danger" role="alert">
+    <h4 class="alert-heading">{{escuderia.nombre}}</h4>
+    <p class="text-center">{{escuderia.informacion}}</p>
+
+    <hr>
+    <p class="mb-0 text-center">Titulos de constructores </p>
+
+    <hr>
+    <p class="mb-0 text-center">Año de fundacion </p>
+</div>
+</body>
