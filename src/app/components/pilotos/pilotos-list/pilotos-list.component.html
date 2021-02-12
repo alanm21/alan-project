@@ -1,0 +1,14 @@
+<div style="height: 90vh!important; background-color: #ca3443;">
+    <br>
+    <div style="background-color:#ca3443; display: flex; justify-content: center;">
+        <input type="text" name="searchPiloto" id="searchPiloto" [(ngModel)]="criteri">
+    </div>
+
+    <div class="cartas row row-cols-5">
+        <app-pilotos-item [piloto]='piloto'
+        *appForDelay="let piloto of pilotos | filterPilotos:criteri"></app-pilotos-item>
+    </div>
+    <div style="margin-bottom: 25px">
+
+    </div>
+</div>

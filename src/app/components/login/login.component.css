@@ -1,7 +1,8 @@
+
 .box {
   position: relative;
   top: 0;
-  opacity: 1;
+  opacity: 0.6;
   float: left;
   padding: 60px 50px 40px 50px;
   width: 100%;
@@ -21,7 +22,7 @@
   z-index: -1;
 }
 .box:before {
-  content: "";
+  /*content: "";*/
   width: 90vh;
   height: 30px;
   border-radius: 10px;
@@ -146,20 +147,20 @@
   background: transparent;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 1);
   font-weight: 300;
 }
 .input label {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 1);
   font-weight: 300;
 }
 
 .button button {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 1);
   font-weight: 300;
 }
 
@@ -212,10 +213,10 @@
   line-height: 64px;
   left: 0%;
   background-color: transparent;
-  border: 3px solid rgba(0, 0, 0, 0.1);
+  border: 3px solid #ca3443;
   font-weight: 900;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.2);
+  color: #ca3443;
 }
 .button button {
   width: 100%;
@@ -373,7 +374,7 @@
 }
 
 body {
-  background-image: url(https://lh4.googleusercontent.com/-XplyTa1Za-I/VMSgIyAYkHI/AAAAAAAADxM/oL-rD6VP4ts/w1184-h666/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png);
+  background-image: url(https://images.unsplash.com/photo-1592639718138-b21ccb87e815?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

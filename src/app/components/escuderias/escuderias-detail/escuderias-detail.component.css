@@ -362,7 +362,7 @@ a {
   .informacionEscuderiaCentrado {
     text-align: center;
     position: relative;
-    margin-top: 53%!important;
+    margin-top: 40%!important;
     margin-bottom: 1%!important;
     left: 50%;
     transform: translate(-50%, -50%);
