@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/user/auth.service';
 import { User } from 'src/app/user/user';
 
@@ -12,7 +13,7 @@ export class LoginComponent implements OnInit {
   user: User = {login: "", passwd: "", token: ""};
   recordar = false;
 
-  constructor(private auth: AuthService) { }
+  constructor(private auth: AuthService, private router: Router) { }
 
   ngOnInit(): void {
     if (localStorage.getItem('login')) {
@@ -27,7 +28,7 @@ export class LoginComponent implements OnInit {
       u => {
         console.log(u);
         this.user = u;
-
+        this.router.navigate(['circuitos'])
       },
       //Si falla:
       e => console.log(e)

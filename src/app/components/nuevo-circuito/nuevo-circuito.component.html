@@ -1,32 +1,37 @@
 <body>
-<div class="materialContainer">
+    <form [formGroup]="formAlan" novalidate (ngSubmit)="submit()">
+        <div class="materialContainer">
 
-    <div class="box">
+            <div class="box">
+                <div class="title">NUEVO CIRCUITO</div>
 
-        <div class="title">NUEVO CIRCUITO</div>
+                <div class="input">
+                    <input type="text" name="nombreGP" id="nombreGP" placeholder="Nombre GP" formControlName="nombreGP">
+                </div>
+                <div *ngIf="formAlan.controls['nombreGP'].invalid" class="alert" style="color: red;z-index: -99;">No puede tener mas de 15 caracteres.</div>
 
-        <div class="input">
-            <input type="text" name="name" id="name" placeholder="Nombre GP">
-            <span class="spin"></span>
+                <div class="input">
+                    <input type="text" name="nombreCircuito" id="nombreCircuito" placeholder="Nombre Circuito" formControlName="nombreCircuito">
+                    <div *ngIf="formAlan.controls['nombreCircuito'].invalid" class="alert" style="color: red;z-index: -99;">No puede tener mas de 20 caracteres.</div>
+                </div>
+
+                <div class="input">
+                    <input type="text" name="paisLocalizacion" id="paisLocalizacion" placeholder="Pais Localización" formControlName="paisLocalizacion">
+                    <div *ngIf="formAlan.controls['paisLocalizacion'].invalid" class="alert" style="color: red;z-index: -99;">El pais es requerido.</div>
+                </div>
+
+                <div class="input">
+                  <input type="text" name="email" id="email" placeholder="Email Del Creador" formControlName="email">
+                  <div *ngIf="formAlan.controls['email'].invalid" class="alert" style="color: red;z-index: -99;">No contiene un @.</div>
+                </div>
+
+                <div class="button login">
+                    <button appHover [cambiaFondo]="fondo" #fondo type="submit"><span>AÑADIR</span> <i class="fa fa-check"></i></button>
+                </div>
+
+            </div>
+
         </div>
 
-        
-        <div class="input">
-            <input type="text" name="name" id="name" placeholder="Nombre Circuito">
-            <span class="spin"></span>
-        </div>
-
-        
-        <div class="input">
-            <input type="text" name="name" id="name" placeholder="Pais Localización">
-            <span class="spin"></span>
-        </div>
-
-        <div class="button login">
-            <button><span>AÑADIR</span> <i class="fa fa-check"></i></button>
-        </div>
-
-    </div>
-
-</div>
+    </form>
 </body>

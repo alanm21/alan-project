@@ -21,4 +21,12 @@ export class PilotosListComponent implements OnInit {
     )
   }
 
+  mostrar: boolean = false;
+  mensaje() {
+    this.mostrar = true;
+    setTimeout(() => {
+      this.mostrar = false;
+    }, 5000);
+  }
+
 }

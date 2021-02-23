@@ -6,10 +6,12 @@
             </div>
             <div class="content">
                 <div class="contentBox">
-                    <h3>{{piloto.nombre}}<br><span>{{piloto.escuderia_actual | uppercase}}</span></h3> <!-- el | slice talla de
-                    000002 a 02 per exemple-->
+                    <h3>{{piloto.nombre}}<br><span>{{piloto.escuderia_actual | uppercase}}</span>
+                      <br><br>
+                      <button (click)="mostrarMensajeInfo()" type="button" class="btn btn-warning">Información</button>
+                    </h3>
                 </div>
-                
+
             </div>
         </div>
     </div>
